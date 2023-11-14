@@ -1,0 +1,626 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Roboto:ital,wght@1,700&display=swap');
+
+.background-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    padding: 0px 20px;
+    width: 630px;
+    height: 64px;
+    margin-left: 40px;
+    margin-top: 20px;
+    border-radius: 15px;
+    background: rgba(242, 236, 190, 0.65);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    transition: all 1s;
+    z-index: 100;
+}
+header:hover{
+    transition: all 1s;
+    background: rgb(242, 236, 190);
+}
+.links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+.links li{
+    list-style: none;
+}
+.links li a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+}
+.links li a:hover{
+    transition: all 0.3s;
+    color: #9A3B3B;
+}
+.links ion-icon{
+    font-size: 25px;
+    cursor: pointer;
+}
+.menu-hamburguer {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.nav.active .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 84px;
+    right: 0;
+    width: 100%;
+    background: rgba(242, 236, 190, 0.65);
+    border-radius: 15px;
+    z-index: 100;
+    transition: all 0.3s;
+}
+
+.nav.active .links li {
+    list-style: none;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.mobile-menu-toggle {
+    display: none; /* Ocultar o ícone do menu em telas maiores */
+    font-size: 30px;
+    cursor: pointer;
+}
+#esportes {
+    margin-top: 20px;
+}
+.h2-esportes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 140px;
+    font-family: 'Roboto Slab', serif;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+.container-home{
+    padding: 150px 40px;
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 20px;
+    font-style: normal;
+    line-height: normal;
+    font-family: 'Roboto Slab', serif;
+}
+
+.container-home p{
+    font-size: 15px;
+    margin-top: -20px;
+}
+#marcas{
+    margin-top: 30px;
+    height: 500px;
+}
+#marcas p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto Slab', serif;
+    margin-top: -10px;
+}
+
+#marcas .container{
+    margin-top: 25px;
+    gap: 30px;
+}
+#elegancia {
+    background: url(/images/background-2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+    height: 500px;
+    text-align: left;
+    color: white;
+    font-family: 'Roboto Slab', serif;
+}
+
+#elegancia h2 {
+    margin-top: -70px;
+    text-align: left;
+    justify-content: start;
+    font-size: 30px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+#calcados .container,
+#acessorios .container{
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+#calcados .container button,
+#acessorios .container button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 192px;
+    height: 33px;
+    color: white;
+    background-color: #9A3B3B;
+    border-radius: 20px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 100;
+    margin-top: 20px;
+    margin-left: 22px;
+    border: none;
+    cursor: pointer;
+}
+.product-img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+.product-title{
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+    justify-content: center;
+    font-family: 'Roboto Slab', serif;
+}
+.price{
+    font-weight: 500;
+}
+.add-cart{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+}
+.add-cart:hover{
+    background-color: hsl(249, 32%, 17%);
+}
+.product-box{
+    position: relative;
+}
+.product-box:hover{
+    padding: 10px;
+    border: 1px solid black;
+    transition: 0.4s;
+}
+footer{
+    background-color: black;
+    height: 300px;
+    color: white;
+    justify-content: space-around;
+    flex-direction: column;
+    font-family: 'Roboto Slab', serif;
+    font-size: 13px;
+    margin-top: -20px;
+}
+footer .container{
+    justify-content: space-around;
+    align-items: center;
+}
+footer li a{
+    text-decoration: none;
+    color: #ADADAD;
+    
+}
+footer li{
+    list-style: none;
+}
+
+footer p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    font-size: 10px;
+}
+.explore{
+    margin-top: 40px;
+}
+
+.cart{
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #fffef3;
+    box-shadow: -2px 0 4px hsl(0, 4%, 15% / 10%);
+    transition: all 0.3s;
+}
+.cart.active{
+    right: 0;
+    transition: all 0.3s;
+}
+.cart-title{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 2rem;
+    font-family: 'Roboto Slab', serif;
+}
+
+.cart-box{
+    display: grid;
+    grid-template-columns: 32% 50% 18%;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.cart-img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+.detail-box{
+    display: grid;
+    row-gap: 0.5rem;
+}
+
+.cart-product-title{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.cart-price{
+    font-weight: 500;
+}
+.cart-quantity{
+    border: 1px solid whitesmoke;
+    outline-color: black;
+    width: 2.4rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.cart-remove{
+    font-size: 24px;
+    color: red;
+    cursor: pointer;
+}
+
+.total{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+    border-top: 1px solid black;
+}
+
+.total-title{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.total-price{
+    margin-left: 0.5rem;
+}
+
+.btn-buy{
+    display: flex;
+    margin: 1.5rem auto 0 auto;
+    padding: 12px 20px;
+    background-color: rgb(255, 44, 44);
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-buy:hover{
+    background-color:rgb(223, 29, 29);
+}
+
+#close-cart{
+    position: absolute;
+    top: 1rem;
+    right: 0.8rem;
+    font-size: 2rem;
+    color: black;
+    cursor: pointer;
+}
+@media (max-width:1480px){
+    .menu-hamburguer{
+        display: none;
+    }
+    .cart-icone{
+        display: none;
+    }
+    .cart{
+        width: 300px;
+    }
+    header{
+        width: 1210px;
+        align-items: center;
+    }
+    header img{
+        align-items: center;
+    }
+    #calcados,
+    #acessorios{
+        margin-top: -200px;
+        
+    }
+    #calcados h2,
+    #acessorios h2{
+        display: flex;
+        margin-top: -200px;
+    }
+    .h2-esportes{
+        margin-top: 400px;
+    }
+    #marcas{
+        margin-top: -300px;
+    }
+    #elegancia h2{
+        text-align: left;
+        margin-top: -500px;
+    }
+    .container-home{
+        margin-top: 30px;
+    }
+}
+@media (max-width:1080px) {
+    .nav{
+        padding: 15px;
+    }
+    section{
+        padding: 3rem 0 2rem;
+    }
+    .container{
+        margin: 0 auto;
+        width: 90%;
+    }
+    .menu-hamburguer{
+        display: none;
+    }
+}
+
+@media (max-width:420px){
+    header{
+        width: 280px;
+    }
+    .mobile-menu-toggle {
+        display: flex; 
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .links {
+        display: none;
+        background: rgba(242, 236, 190, 0.65);
+        border-radius: 15px;
+        padding: 10px;
+        position: absolute;
+        top: 69px;
+        right: 0px;
+        width: 300px;
+        transition: all 0.6s;
+    }
+    .links:hover{
+        background: rgb(242, 236, 190);
+        transition: all 0.6s;
+    }
+    #nav-links .icone{
+        display: block;
+        font-size: 20px;
+    }
+    .links.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .links li {
+        list-style: none;
+        margin-bottom: 10px;
+    }
+    .h2-esportes{
+        margin-top: 200px;
+    }
+    .cart{
+        position: fixed;
+        top: 0;
+        width: 260px;
+        min-height: 100vh;
+        padding: 20px;
+        background-color: #fffef3;
+        box-shadow: -2px 0 4px hsl(0, 4%, 15% / 10%);
+        transition: all 0.3s;
+    }
+
+    #esportes .container, #marcas .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #calcados h2,
+    #acessorios h2{
+        margin-top: 0px;
+    }
+    #esportes h2{
+        margin-top: -200px;
+    }
+    #esportes h2, #marcas h2{
+        font-size: 20px;
+        text-align: center;
+    }
+    #marcas h2{
+        margin-top: 50px;
+    }
+    #marcas p{
+        text-align: center;
+    }
+    .explore{
+        margin-top: 35px;
+    }
+    #elegancia {
+        background: url(/images/background-2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 20px;
+        height: 230px;
+        margin-top: 550px;
+        text-align: left;
+        color: white;
+        font-family: 'Roboto Slab', serif;
+    }
+    #elegancia h2{
+        margin-top: -160px;
+        font-size: 20px;
+    }
+    #calcados h2,
+    #acessorios h2{
+        font-size: 20px;
+        text-align: center;
+    }
+    #cart-icon{
+        font-size: 10px;
+        cursor: pointer;
+    }
+}
+@media (max-width:400px){
+    .nav{
+        padding: 11px;
+    }
+    .cart{
+        width: 320px;
+    }
+    header{
+        width: 240px;
+    }
+    .mobile-menu-toggle {
+        display: flex; 
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .links {
+        display: none;
+        background: rgba(242, 236, 190, 0.65);
+        border-radius: 15px;
+        padding: 10px;
+        position: absolute;
+        top: 48px;
+        right: 0px;
+        width: 260px;
+        transition: all 0.6s;
+    }
+    .links:hover{
+        background: rgb(242, 236, 190);
+        transition: all 0.6s;
+    }
+    #nav-links .icone{
+        display: block;
+        font-size: 20px;
+    }
+    .links.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .links li {
+        list-style: none;
+        margin-bottom: 10px;
+    }
+    .footer h2{
+        font-size: 5px;
+    }
+    .cart{
+        position: fixed;
+        top: 0;
+        width: 260px;
+        min-height: 100vh;
+        padding: 20px;
+        background-color: #fffef3;
+        box-shadow: -2px 0 4px hsl(0, 4%, 15% / 10%);
+        transition: all 0.3s;
+    }
+    #cart-icon{
+        display: contents;
+    }
+    .container-home{
+        margin-top: 30px;
+        font-size: 16px;
+    }
+    #esportes .container, #marcas .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    #esportes h2{
+        margin-top: -200px;
+    }
+    #esportes h2, #marcas h2{
+        font-size: 20px;
+        text-align: center;
+    }
+    #marcas p{
+        text-align: center;
+    }
+    #elegancia {
+        background: url(/images/background-2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 20px;
+        height: 230px;
+        margin-top: 580px;
+        text-align: left;
+        color: white;
+        font-family: 'Roboto Slab', serif;
+    }
+    #elegancia h2{
+        margin-top: -160px;
+        font-size: 20px;
+    }
+    #calcados h2,
+    #acessorios h2{
+        margin-top: -0px;
+    }
+    #calcados h2,
+    #acessorios h2{
+        font-size: 20px;
+        text-align: center;
+    }
+    .menu-hamburguer{
+        display: flex;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    #cart-icon{
+        font-size: 10px;
+        cursor: pointer;
+    }
+}
